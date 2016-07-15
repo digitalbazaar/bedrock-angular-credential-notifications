@@ -1,0 +1,14 @@
+{
+  "name": "bedrock-angular-credential-notifications",
+  "version": "0.0.1",
+  "moduleType": [
+    "amd"
+  ],
+  "main": [
+    "./main.js"
+  ],
+  "description": "Bedrock AngularJS Credential Notifications.",
+  "dependencies": {
+    "bedrock-angular": "^2.0.0"
+  }
+}
