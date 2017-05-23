@@ -1,27 +1,19 @@
 /*!
  * Bedrock Credential Notification Service.
  *
- * Copyright (c) 2016 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2016-2017 Digital Bazaar, Inc. All rights reserved.
  *
  * @author Alex Lamar
  */
-define([], function() {
-
-'use strict';
-
-function register(module) {
-  module.service('brCredentialNotificationService', factory);
-}
-
 /* @ngInject */
-function factory($http, config) {
+export default function factory($http, config) {
   var service = {};
   var basePath =
     config.data['bedrock-credential-notifications'].routes.basePath;
 
   // TODO: potentially use service.collection in the future for semi-persistent
   // notifications or managing a notification queue
-  /*service.collection = new brResourceService.Collection({
+  /* service.collection = new brResourceService.Collection({
     url: basePath
   });*/
 
@@ -57,7 +49,3 @@ function factory($http, config) {
 
   return service;
 }
-
-return register;
-
-});
